@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Diabetics Anonymous</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="css.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+    <!-- <a class = "navbar-brand" href="#"><img src = "img/logo.png"></a>-->
+    <button class="navbar-toggler" type="button" data-toggle="collapse"
+    data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#resources">Resources</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#meetteam">Meet the Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#video">Video</a>
+            </li>
+        </ul>
+    </div>
+
+</div>
+
+</nav>
+
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+<ul class="carousel-indicators">
+    <li data-target="#slides" data-slide-to="0" class="active"></li>
+    <li data-target="#slides" data-slide-to="1"></li>
+    <li data-target="#slides" data-slide-to="2"></li>
+</ul>
+<div class="carousel-inner">
+    <div class="carousel-item active">
+        <img src="pics/pi1.jpg">
+        <div class="carousel-caption">
+            <h1 class="display-2">Hacking Diabetes</h1>
+            <h3>A CIS111B Semester Project</h3>
+            <button type="button" class="btn btn-outline-light btn-lg">VIEW PROJECT</button>
+            <button type="button" class="btn btn-primary btn-lg">Learn More</button>
+        </div>
+    </div>
+    <div class="carousel-item">
+        <img src="pics/pump1.jpg">
+        <div class="carousel-caption">
+                <h1 class="display-2">Hacking Diabetes</h1>
+                <h3>A CIS111B Semester Project</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">VIEW PROJECT</button>
+                <button type="button" class="btn btn-primary btn-lg">Learn More</button>
+            </div>
+    </div>
+    <div class="carousel-item">
+        <img src="pics/glucometer.jpg">
+        <div class="carousel-caption">
+                <h1 class="display-2">Hacking Diabetes</h1>
+                <h3>A CIS111B Semester Project</h3>
+                <button type="button" class="btn btn-outline-light btn-lg">VIEW PROJECT</button>
+                <button type="button" class="btn btn-primary btn-lg">Learn More</button>
+            </div>
+    </div>
+</div>
+</div>
+
+<!--- Jumbotron 
+<div class="container-fluid">
+<div class="row jumbotron">
+    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
+        <p class="lead"></p>
+    </div>
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+        <a href="#"><button class="btn btn-outline-secondary btn-lg">Web Hosting></button></a>
+    </div>
+</div>
+</div>-->
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+    <div class="col-12">
+        <div id="about">
+        <h1 class="display-4">About The Project</h1>
+        </div>
+    </div>
+    <hr>
+    <div class="col-12">
+        <p class="lead">Welcome to our project page! We are students who decided to make a real time bloodsugar
+            graph based off an openAPS hacked insulin pump as our semester project for our intro to programming class!
+        </p>
+    </div>
+</div>    
+</div>
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-lg-4">
+            <h2>View your blood sugars in real time...</h2>
+            <p>By using data pulled from a glucometer through the NightScouts app we are able to connect that data into 
+                a graph with the Google Sheets API.</p>
+            <p>The data is uploaded from a Mongo Database through Python code into a Google Sheets, then the sheet is run
+                through Google Data Studio to generate this real time graph.</p>
+            <p>Select the time range you wish to view the bloodsugar trend in.</p>
+            <br>
+            <a href="projectpage.html" target="_blank" class="btn btn-primary">Learn More</a>
+        
+        </div>
+        <div class="col-lg-8">
+                <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/1pLlU_HdYvmKbSU3s1-I-dLRayi2_Pt8a/page/NPen" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </div>
+    </div>
+<hr class="my-4">
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <div id="resources">
+                <h1 class="display-4">Our Resources</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">These are some of the amazing resources we used to create our project. NightScouts and openAPS 
+                    are our main sources of inspiration. 
+                </p>
+            </div>
+        </div>    
+        </div>
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+<div class="row text-center padding">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-mobile"></i>
+        <h3>NIGHTSCOUT</h3>
+        <p>The NightScout mobile app pulls glucose values from the glucometer through and OTG cable to a phone.</p>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <i class="fas fa-database"></i>
+        <h3>OPENAPS</h3>
+        <p>OpenAPS runs a script that creates the Mongo database where we pull our data from.</p>
+    </div>
+    <div class="col-sm-12 col-md-4">
+        <i class="fab fa-python"></i>
+        <h3>PYTHON</h3>
+        <p>The Google Sheets API and code we created to pull data from Mongo were written in Python.</p>
+    </div>
+    <div class="col-sm-12">
+        <a ref="#" class="btn btn-primary">Learn More</a>
+    </div>
+</div>
+
+<hr class="my-4">
+</div>
+
+
+<!--- Fixed background -->
+<figure>
+    <div class="fixed-wrap">
+        <div id="fixed">
+        </div>
+    </div>
+</figure>
+
+
+<!--- Meet the team -->
+<div class="container-fluid padding">
+<div class="row welcome text-center">
+    <div class="col-12">
+        <div id="meetteam">
+        <h1 class="display-4">Meet the Team</h1>
+        </div>
+    </div>
+    <hr>
+</div>
+</div>
+<!--- Cards -->
+<div class="container-fluid padding">
+<div class="row padding">
+    <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top" src="img/team1.png">
+            <div class="card-body">
+                <h4 class="card-title">Kevin Tofel</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top" src="img/team2.png">
+            <div class="card-body">
+                <h4 class="card-title">Wanlu Ding</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <img class="card-img-top" src="img/team3.png">
+            <div class="card-body">
+                <h4 class="card-title">Sean Tinneny</h4>
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+            <div class="card">
+                <img class="card-img-top" src="img/team3.png">
+                <div class="card-body">
+                    <h4 class="card-title">Sarah Wagner</h4>
+                    <p class="card-text"></p>
+                </div>
+            </div>
+        </div>
+</div>
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+<div class="row padding">
+    <div class="col-lg-6">
+        <div id="video">
+        <h2>Final Project Video</h2>
+        </div>
+        <p>As part of our finished project we needed to create a video that demonstrates our finish product.</p>
+        <p>Over five weeks we grouped together to create our own real time graph that displays bloodsugar and insulin rates
+            from an openAPS hacked insulin pump. We had to change our main lanuage from Java to Python halfway through. We ran into
+            problems with hardware. We hit a few bumps in trying to figure out the database. However, at the end of this semester we pulled
+            off what we set out to do. This video is a demo of how it all works.
+        </p>
+        <a ref="#" class="btn btn-primary">Learn More</a>
+        <br>
+    </div>
+    <div class="col-lg-6">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dxp7Md3DG30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</div>
+</div>
+
+<!--- Footer -->
+<footer>
+<div class="container-fluid padding">
+<div class="row text-center">
+    <div class="col-md-12">
+        <p></p>
+    </div>
+</div>
+</div>
+</footer>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
