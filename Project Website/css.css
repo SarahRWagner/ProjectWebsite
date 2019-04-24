@@ -95,6 +95,9 @@ hr.light-100{
     border-top: 1px solid #d5d5d5;
     width:100%;
 }
+a{
+    color: inherit;
+}
 
 
 /*---Media Queries --*/
@@ -153,6 +156,7 @@ hr.light-100{
         padding: .7rem;
     }
 }
+
 
 
 /*---Firefox Bug Fix --*/
