@@ -23,20 +23,20 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
+            <li class="nav-item">
                 <a class="nav-link" href="index.html">Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#about">About</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="projectpage.html">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#resources">Resources</a>
+                <a class="nav-link" href="resources.html">Resources</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#meetteam">Meet the Team</a>
+                <a class="nav-link" href="meettheteam.html">Meet the Team</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#video">Video</a>
+                <a class="nav-link" href="video.html">Video</a>
             </li>
         </ul>
     </div>
@@ -69,6 +69,160 @@
     </div>
 </div>
 </div>
+<hr>
+
+<!--- Hardware Parts -->
+<div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-4">
+                <h2>The hardware side...</h2>
+                <p>We started off this project with the idea to create our own real-time graph based off the changes an OpenAPS insulin pump
+                    would make in the insulin rates throughout the day and how it correlates to blood sugar trends. To start the project off we
+                    followed the OpenAPS guide to build a hacked insulin pump. </p>
+                <p>A Raspberry Pi Zero with headers, an Explorer Pi HAT, a 915 mgHZ antenna, a battery bank, a Medtronic 512 insulin pump, a 
+                    glucometer and many wires create the hacked closed loop system. You can find the instructions to put all these pieces together
+                    on the <a href="https://openaps.readthedocs.io/en/latest/index.html">OpenAPS documentation page</a>.</p>
+            
+            </div>
+            <div class="col-lg-8">
+                    <img width="600" height="450" src="pics/diagram1.jpg" frameborder="0" style="border:0" allowfullscreen>
+
+            </div>
+        </div>
+        </div>
+    <hr class="my-4">
+
+<!--- Closed Loop Section -->
+<div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-8">
+                    <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/1pLlU_HdYvmKbSU3s1-I-dLRayi2_Pt8a/page/NPen" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-lg-4">
+                <h2>What does 'closed loop' mean?</h2>
+                <p>Currently there is only one closed loop insulin pump on the market that the FDA approves of. What makes a closed loop
+                    insulin pump different from the regular insulin pumps is its "auto-mode". Auto-mode takes over the decision making for basal
+                    rates. A basal rate is the continous stream of insulin to control blood sugars 24 hours a day. </p>
+                <p>In the open loop systems the patient and their doctor have to decide the basal rates, and play a long game of guess and check
+                    to see if the basal is too high (too much insulin) or too low (too little insulin). A closed loop system uses a continous glucose
+                    monitor (CGM) that is worn by the patient 24/7 and pulls blood sugar values from the interstital fluid. The pump then takes that blood
+                    sugar value and runs it through an algorithm. That algorithm decides how much insulin the pump should push out.</p>
+                <p>As mentioned above, there is only one closed loop system out that is approved by the FDA. However, many diabetics took technology
+                    in their own hands and created their own closed loop system with the hardware listed above. This hacked version is more accurate
+                    and the patient can see the changed rates.
+                </p>
+            </div>
+      
+        </div>
+        </div>
+    <hr class="my-4">
+<!--- Why are we doing this?-->
+<div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-4">
+                <h2>Why are we doing this?</h2>
+                <p>Our purpose for this project is to improve the technology that surrounds the diabetes community. Type One Diabetes  </p>
+                <p></p>
+                <p></p>
+            </div>
+            <div class="col-lg-8">
+                    <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/1pLlU_HdYvmKbSU3s1-I-dLRayi2_Pt8a/page/NPen" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+      
+        </div>
+        </div>
+    <hr class="my-4">
+
+<!--- Here's how the Loop works -->
+<div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <div id="resources">
+                <h1 class="display-4">How do we Loop?</h1>
+                </div>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">Here is how all the hardware connects to one another.
+                </p>
+            </div>
+        </div>    
+        </div>
+
+<!--- Cards -->
+<div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="pics/diagram3.jpeg">
+                    <div class="card-body">
+                        <h4 class="card-title">The Glucometer</h4>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="pics/diagram2.jpeg">
+                    <div class="card-body">
+                        <h4 class="card-title">The Pi with Explorer HAT</h4>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img class="card-img-top" src="pics/diagram4.jpeg">
+                    <div class="card-body">
+                        <h4 class="card-title">The Insulin Pump</h4>
+                        <p class="card-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+<!--- Here's how the Loop works -->
+<div class="container-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <div id="resources">
+                <h1 class="display-4">Where does data come from?</h1>
+                <h2>And where does it go?</h2>
+                </div>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">Here is the cycle of data across the hardware, database, and into our graphs.
+                </p>
+            </div>
+        </div>    
+        </div>
+
+<!--- How we would expan this-->
+<div class="container-fluid padding">
+        <div class="row padding">
+            <div class="col-lg-4">
+                <h2>Let's talk expansion...</h2>
+                <p>We started off this project with the idea to create our own real-time graph based off the changes an OpenAPS insulin pump
+                    would make in the insulin rates throughout the day and how it correlates to blood sugar trends. To start the project off we
+                    followed the OpenAPS guide to build a hacked insulin pump. </p>
+                <p>A Raspberry Pi Zero with headers, an Explorer Pi HAT, a 915 mgHZ antenna, a battery bank, a Medtronic 512 insulin pump, a 
+                    glucometer and many wires create the hacked closed loop system. You can find the instructions to put all these pieces together
+                    on the <a href="https://openaps.readthedocs.io/en/latest/index.html">OpenAPS documentation page</a>.</p>
+            
+            </div>
+            <div class="col-lg-8">
+                    <img width="600" height="450" src="pics/diagram1.jpg" frameborder="0" style="border:0" allowfullscreen>
+
+            </div>
+        </div>
+        </div>
+    <hr class="my-4">
+
+
+
+
 
 
 <!--- Footer -->
